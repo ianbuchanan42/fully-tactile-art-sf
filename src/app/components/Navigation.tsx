@@ -70,12 +70,13 @@ export default function Navigation() {
             </li>
             <li>
               <Link
-                href='/about'
-                className={`${isActive('/about')} transition-colors`}
+                href='/past-events'
+                className={`${isActive('/past-events')} transition-colors`}
               >
-                About
+                Past Events
               </Link>
             </li>
+
             <li>
               <Link
                 href='/testimonials'
@@ -86,10 +87,10 @@ export default function Navigation() {
             </li>
             <li>
               <Link
-                href='/past-events'
-                className={`${isActive('/past-events')} transition-colors`}
+                href='/about'
+                className={`${isActive('/about')} transition-colors`}
               >
-                Past Events
+                About
               </Link>
             </li>
           </ul>

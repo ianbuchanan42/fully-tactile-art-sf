@@ -6,7 +6,7 @@ export const events: Event[] = [
   {
     id: 'staying-in-touch-2024',
     title: 'Staying in "Touch"',
-    date: 'March 9th, 2024',
+    date: 'March 9th, 2025',
     location: 'Jettison Creative, 47 Jeff Adachi Way, San Francisco',
     time: '12:00–3:00 pm (Presentations begin at 1:00 pm)',
     description:
