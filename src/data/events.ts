@@ -4,7 +4,7 @@ import { Event } from '@/types';
 // This can be replaced with Supabase fetching later
 export const events: Event[] = [
   {
-    id: 'staying-in-touch-2024',
+    id: 'staying-in-touch-2025',
     title: 'Staying in "Touch"',
     date: 'March 9th, 2025',
     location: 'Jettison Creative, 47 Jeff Adachi Way, San Francisco',

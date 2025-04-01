@@ -18,8 +18,10 @@ export default function AboutPage() {
       />
 
       <div className='container mx-auto p-4'>
-        <section className='mb-8'>
-          <h2 className='text-2xl font-semibold mb-4'>Our Mission</h2>
+        <section aria-labelledby='mission-heading' className='mb-8'>
+          <h2 id='mission-heading' className='text-2xl font-semibold mb-4'>
+            Our Mission
+          </h2>
           <p className='mb-4'>
             Fully Tactile Art SF is dedicated to expanding the boundaries of art
             by creating free public art spaces rooted in the sensation of touch.
@@ -34,8 +36,11 @@ export default function AboutPage() {
           </p>
         </section>
 
-        <section className='mb-8'>
-          <h2 className='text-2xl font-semibold mb-4'>
+        <section aria-labelledby='tactile-experience-heading' className='mb-8'>
+          <h2
+            id='tactile-experience-heading'
+            className='text-2xl font-semibold mb-4'
+          >
             Tactile Art Experience
           </h2>
           <p className='mb-4'>
@@ -50,8 +55,13 @@ export default function AboutPage() {
           </p>
         </section>
 
-        <section>
-          <h2 className='text-2xl font-semibold mb-4'>Accessibility Focus</h2>
+        <section aria-labelledby='accessibility-heading'>
+          <h2
+            id='accessibility-heading'
+            className='text-2xl font-semibold mb-4'
+          >
+            Accessibility Focus
+          </h2>
           <p className='mb-4'>
             We are committed to making art accessible to people of all
             abilities. Our events feature tactile elements, audio descriptions,

@@ -16,7 +16,7 @@ export interface Event {
 
 export interface Testimonial {
   id: string;
-  question: string;
+  question?: string;
   quote: string;
   name: string;
 }
