@@ -4,18 +4,21 @@ import { Testimonial } from '@/types';
 export const testimonials: Testimonial[] = [
   {
     id: 'testimonial-1',
+    question: '',
     quote:
       "Being a person who is blind, it's been a very cool multi-sensory experience. It was a magical and transformative experience",
     name: 'Kevin, Arts Patron who is Blind',
   },
   {
     id: 'testimonial-2',
+    question: '',
     quote:
       'Wonderful, beyond my wildest expectations. Wonderfully welcoming, full of fun creativity, originality, depth, joy, playfulness. Thoughtful beings behind this. Inspiring takeoff point for the public. Thank you to the volunteers for helpful guidance',
     name: 'Jane, Arts Patron who is Blind',
   },
   {
     id: 'testimonial-3',
+    question: '',
     quote:
       "What an amazing experience! It takes the art experience to a whole other level. Thank you for your great vision in putting this show together! Can't wait until the next one!",
     name: 'Evelyn, Arts Patron',

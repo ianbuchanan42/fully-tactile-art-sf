@@ -14,6 +14,7 @@ export default function Home() {
         imageAlt='A person touching a tactile art piece at Fully Tactile Art SF'
         title='Fully Tactile Art SF'
         subtitle='Celebrating the art of touch and accessibility'
+        align='left'
       />
 
       <article className='container mx-auto p-4'>

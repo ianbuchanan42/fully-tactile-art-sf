@@ -1,4 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fully Tactile Art SF - Next.js Project
+
+[![Framework: next.js](https://img.shields.io/badge/Framework-Next.js-000000?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Language: typescript](https://img.shields.io/badge/Language-TypeScript-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![UI: react](https://img.shields.io/badge/UI-React-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![Styling: tailwindcss](https://img.shields.io/badge/Styling-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+
+This is a [Next.js](https://nextjs.org) project for Fully Tactile Art SF, an organization dedicated to making art accessible through touch and multi-sensory experiences.
+
+## Built with Next.js
+
+This project leverages the power of Next.js for:
+
+- Static site generation with `output: 'export'`
+- React Server Components
+- Image optimization
+- Accessibility-focused components
+- Type-safe development with TypeScript
 
 ## Getting Started
 
@@ -28,6 +45,16 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deployment
+
+This Next.js application is configured for static exports, making it easy to deploy to any static hosting service.
+
+```bash
+npm run build
+```
+
+The static files will be generated in the `out` directory.
 
 ## Deploy on Vercel
 

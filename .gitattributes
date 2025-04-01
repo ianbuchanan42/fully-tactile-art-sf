@@ -1,0 +1,18 @@
+# Mark this as a Next.js project
+*.js linguist-language=NextJS
+*.jsx linguist-language=NextJS
+*.ts linguist-language=NextJS
+*.tsx linguist-language=NextJS
+
+# Exclude build output and dependencies from language statistics
+out/** linguist-generated=true
+.next/** linguist-generated=true
+node_modules/** linguist-vendored=true
+
+# Mark specific Next.js files as documentation
+next.config.js linguist-documentation=false
+next.config.ts linguist-documentation=false
+
+# Consider package.json as configuration rather than JavaScript
+package.json linguist-language=JSON
+package-lock.json linguist-generated=true
