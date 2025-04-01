@@ -1,4 +1,4 @@
-import PageBanner from '../components/PageBanner';
+import PageBanner from '@/components/PageBanner';
 
 export const metadata = {
   title: 'About Us | Fully Tactile Art SF',

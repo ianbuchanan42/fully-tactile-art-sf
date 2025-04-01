@@ -1,7 +1,7 @@
 import { Testimonial } from '@/types';
 import { testimonials } from '@/data/testimonials';
 import Link from 'next/link';
-import PageBanner from '../components/PageBanner';
+import PageBanner from '@/components/PageBanner';
 
 export const metadata = {
   title: 'Testimonials | Fully Tactile Art SF',

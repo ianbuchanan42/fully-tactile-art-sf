@@ -1,7 +1,7 @@
 // app/layout.tsx
 import './globals.css';
-import Navigation from './components/Navigation';
-import Footer from './components/Footer';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 import { geistSans, geistMono } from '@/config/fonts';
 import { siteMetadata } from '@/config/metadata';
 

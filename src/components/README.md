@@ -5,22 +5,17 @@ The `PageBanner` component provides a consistent, responsive banner element for 
 ## Usage
 
 ```jsx
-import PageBanner from '../components/PageBanner';
+import PageBanner from '@/components/PageBanner';
 
-export default function YourPage() {
+export default function SomePage() {
   return (
-    <>
-      <PageBanner
-        imagePath='/images/banners/your-page-banner.jpg'
-        imageAlt='Description of the banner image for accessibility'
-        title='Your Page Title'
-        subtitle='Optional subtitle for additional context'
-        align='center' // 'left', 'center' (default), or 'right'
-        overlayOpacity={0.5} // 0-1, default is 0.5
-      />
-
-      {/* Rest of your page content */}
-    </>
+    <PageBanner
+      imagePath='/images/banners/example-banner.jpg'
+      imageAlt='Description of the banner image'
+      title='Page Title'
+      subtitle='Optional subtitle text'
+      align='center'
+    />
   );
 }
 ```
