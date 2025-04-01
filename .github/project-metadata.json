@@ -1,0 +1,23 @@
+{
+  "name": "fully-tactile-art-sf",
+  "description": "A Next.js application for Fully Tactile Art SF organization",
+  "framework": "nextjs",
+  "version": "0.1.0",
+  "repository_type": "nextjs",
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "accessibility",
+    "art",
+    "tactile"
+  ],
+  "technologies": {
+    "framework": "Next.js",
+    "language": "TypeScript",
+    "ui": "React",
+    "styling": "Tailwind CSS",
+    "deployment": "Static Export"
+  }
+}

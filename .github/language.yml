@@ -1,0 +1,36 @@
+name: Next.js
+color: '#000000'
+aliases:
+  - next
+  - nextjs
+  - react-nextjs
+  - react-server-components
+  - rsc
+
+# Files associated with this language
+files:
+  - '*.jsx'
+  - '*.tsx'
+  - 'next.config.js'
+  - 'next.config.ts'
+  - 'next.config.mjs'
+
+# Additional detection rules
+detection:
+  filename:
+    - next.config.js
+    - next.config.ts
+    - next.config.mjs
+  path:
+    - app/**/*
+    - pages/**/*
+    - .next/**/*
+  content:
+    - 'import { type NextPage }'
+    - 'import type { NextPage }'
+    - 'import type { AppProps }'
+    - 'import { AppProps }'
+    - 'import { NextApiRequest, NextApiResponse }'
+    - 'import type { NextApiRequest, NextApiResponse }'
+    - 'export default function App('
+    - "'use client'"
