@@ -1,0 +1,4 @@
+scripts/
+*.sh
+*.bash
+*.zsh 
