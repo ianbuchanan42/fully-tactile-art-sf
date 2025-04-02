@@ -1,7 +1,7 @@
 import { Event } from '@/types';
 import { events } from '@/data/events';
 import Link from 'next/link';
-import PageBanner from '../components/PageBanner';
+import PageBanner from '@/components/PageBanner';
 import EventWithImage from '@/components/EventWithImage';
 
 export const metadata = {

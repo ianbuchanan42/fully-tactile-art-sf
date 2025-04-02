@@ -1,7 +1,7 @@
 // app/page.tsx
 import Link from 'next/link';
 import { events } from '@/data/events';
-import PageBanner from './components/PageBanner';
+import PageBanner from '@/components/PageBanner';
 
 export default function Home() {
   // Get the next upcoming event
