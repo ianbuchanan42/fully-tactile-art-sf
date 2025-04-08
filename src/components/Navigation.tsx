@@ -118,13 +118,13 @@ export default function Navigation() {
             </li>
             <li>
               <Link
-                href='/about'
+                href='/past-events'
                 className={`${isActive(
-                  '/about'
+                  '/past-events'
                 )} block py-2 px-3 rounded transition-colors`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
+                Past Events
               </Link>
             </li>
             <li>
@@ -140,13 +140,13 @@ export default function Navigation() {
             </li>
             <li>
               <Link
-                href='/past-events'
+                href='/about'
                 className={`${isActive(
-                  '/past-events'
+                  '/about'
                 )} block py-2 px-3 rounded transition-colors`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Past Events
+                About
               </Link>
             </li>
           </ul>
