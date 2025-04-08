@@ -13,6 +13,7 @@ interface PageBannerProps {
   align?: 'left' | 'center' | 'right';
   overlayOpacity?: number; // 0 to 1
   textBgOpacity?: number; // 0 to 1
+  id?: string; // Optional custom ID
 }
 
 export default function PageBanner({
@@ -23,11 +24,10 @@ export default function PageBanner({
   align = 'center',
   overlayOpacity = 0.5,
   textBgOpacity = 0.85,
+  id = 'page-banner-title', // Use a simple default ID
 }: PageBannerProps) {
-  // Generate a unique ID for accessibility
-  const headingId = `page-banner-title-${title
-    .replace(/\s+/g, '-')
-    .toLowerCase()}`;
+  // Use the provided ID instead of generating one dynamically
+  const headingId = id;
 
   return (
     <header

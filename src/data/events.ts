@@ -15,6 +15,8 @@ export const events: Event[] = [
     attendanceCount: 80,
     artistCount: 5,
     grantSupport: [],
+    altText:
+      'Artists and visitors interacting with tactile art at the "Staying in Touch" exhibition at Jettison Creative. Artists include Tan Reese, Blink Pop Shift and Kit Rosefield',
   },
   {
     id: 'fully-tactile-art-exhibition-2024',
@@ -27,6 +29,8 @@ export const events: Event[] = [
     attendanceCount: 400,
     artistCount: 20,
     grantSupport: ['Zellerbach Community Arts Grant'],
+    altText:
+      "Jerry hugs a hanging felt pod made by Stephanie Metz and another patron wearing a white glove explores work by Sade' Cole. You can see ceramics done by Tan Reese and a hanging flag promoting the event",
   },
 ];
 

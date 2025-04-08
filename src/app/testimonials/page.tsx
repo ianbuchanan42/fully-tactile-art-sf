@@ -14,7 +14,7 @@ export default function TestimonialsPage() {
     <>
       <PageBanner
         imagePath='/images/banners/testimonials-banner.jpg'
-        imageAlt='Visitors sharing experiences at a Fully Tactile Art SF exhibition'
+        imageAlt="Various pieces of tactile art by Susan Roemer, Sade' Cole, Diane Komater, Brandon Hodges and Justin Kiene"
         title='Testimonials'
         subtitle='Stories and experiences from our community'
         align='left'

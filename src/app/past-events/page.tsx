@@ -17,8 +17,8 @@ function getEventImagePath(event: Event): string {
   return `/images/events/${event.id}.jpg`;
 }
 
-// Example function to generate descriptive alt text for event images
-function getEventImageAlt(event: Event): string {
+// Fallback function for event images without alt text
+function getDefaultEventImageAlt(event: Event): string {
   return `${event.title} - Tactile art exhibition at ${event.location}`;
 }
 
@@ -29,7 +29,7 @@ export default function PastEventsPage() {
     <>
       <PageBanner
         imagePath='/images/banners/past-events-banner.jpg'
-        imageAlt='Archive of past tactile art exhibitions and events'
+        imageAlt='A crowd of people enjoying The Fully Tactile Art Exhibition of summer 2024'
         title='Past Events'
         subtitle='Exploring our history of tactile art experiences'
         align='left'
@@ -44,7 +44,7 @@ export default function PastEventsPage() {
                 key={event.id}
                 event={event}
                 imagePath={getEventImagePath(event)}
-                imageAlt={getEventImageAlt(event)}
+                imageAlt={event.altText || getDefaultEventImageAlt(event)}
                 imagePosition={index % 2 === 0 ? 'left' : 'right'}
               />
             ))}
