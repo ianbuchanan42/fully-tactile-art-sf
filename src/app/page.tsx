@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <PageBanner
         imagePath='/images/banners/home-banner.jpg'
-        imageAlt='A person touching a tactile art piece at Fully Tactile Art SF'
+        imageAlt='A person exploring a wood sculpture with their hand'
         title='Fully Tactile Art SF'
         subtitle='Celebrating the art of touch and accessibility'
         align='left'

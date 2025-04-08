@@ -12,6 +12,7 @@ export interface Event {
   attendanceCount?: number;
   artistCount?: number;
   grantSupport?: string[]; // List of grants that supported this event
+  altText?: string; // Alt text for event image
 }
 
 export interface Testimonial {
