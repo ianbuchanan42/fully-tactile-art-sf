@@ -18,6 +18,16 @@ export default function Home() {
       />
 
       <article className='container mx-auto p-4'>
+        <section className='mb-12 max-w-3xl mx-auto py-12'>
+          <h2 className='text-2xl font-semibold mb-4'>Welcome art lovers!</h2>
+          <p>
+            Fully Tactile Art SF is a non-profit organization dedicated to
+            creating free to the public art spaces that engage not only the
+            sense of touch but all the senses. We strive to transform the way
+            people interact with art, providing a unique environment where
+            artists can reimagine how their work is experienced and enjoyed.
+          </p>
+        </section>
         <div className='content'>
           {nextEvent ? (
             <section
