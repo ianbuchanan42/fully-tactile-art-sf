@@ -31,7 +31,7 @@ export const events: Event[] = [
         dayOfWeek: 'Friday',
         time: '3-8pm',
         isSpecial: true,
-        notes: '*Showing Film: Telephone at 6pm',
+        notes: '*Showing Film: Telephone at 7pm',
       },
       {
         date: 'September 6th, 2025',
