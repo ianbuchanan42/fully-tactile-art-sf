@@ -4,6 +4,58 @@ import { Event } from '@/types';
 // This can be replaced with Supabase fetching later
 export const events: Event[] = [
   {
+    id: 'exploring-maps-2025',
+    title: 'Exploring Maps',
+    date: 'August 30th - September 7th, 2025',
+    location: 'Jettison Creative, 47 Jeff Adachi Way, San Francisco',
+    schedule: [
+      {
+        date: 'August 30th, 2025',
+        dayOfWeek: 'Saturday',
+        time: 'Noon-5pm',
+      },
+      {
+        date: 'August 31st, 2025',
+        dayOfWeek: 'Sunday',
+        time: 'Noon-5pm',
+        notes: '*Jerry is Presenting tactile maps at 3pm',
+        isSpecial: true,
+      },
+      {
+        date: 'September 1st, 2025',
+        dayOfWeek: 'Monday',
+        time: 'Noon-5pm',
+      },
+      {
+        date: 'September 5th, 2025',
+        dayOfWeek: 'Friday',
+        time: '3-8pm',
+        isSpecial: true,
+        notes: '*Showing Film: Telephone at 6pm',
+      },
+      {
+        date: 'September 6th, 2025',
+        dayOfWeek: 'Saturday',
+        time: 'Noon-5pm',
+      },
+      {
+        date: 'September 7th, 2025',
+        dayOfWeek: 'Sunday',
+        time: 'Noon-5pm',
+        notes: '*Masks will be required for this day.',
+        isSpecial: true,
+      },
+    ],
+    description:
+      'An exploration of Maps and how they can be a combination of functional, fantastical, emotional and practical',
+    isPast: false,
+    attendanceCount: 0,
+    artistCount: 10,
+    grantSupport: [],
+    altText:
+      'Artists and visitors interacting with tactile art at the "Staying in Touch" exhibition at Jettison Creative. Artists include Tan Reese, Blink Pop Shift and Kit Rosefield',
+  },
+  {
     id: 'staying-in-touch-2025',
     title: 'Staying in "Touch"',
     date: 'March 9th, 2025',

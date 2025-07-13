@@ -1,7 +1,9 @@
 // app/page.tsx
 import Link from 'next/link';
+import Image from 'next/image';
 import { events } from '@/data/events';
 import PageBanner from '@/components/PageBanner';
+import EventSchedule from '@/components/EventSchedule';
 
 export default function Home() {
   // Get the next upcoming event
@@ -25,7 +27,7 @@ export default function Home() {
             creating free to the public art spaces that engage not only the
             sense of touch but all the senses. We strive to transform the way
             people interact with art, providing a unique environment where
-            artists can reimagine how their work is experienced and enjoyed.
+            artists can re-imagine how their work is experienced and enjoyed.
           </p>
         </section>
         <div className='content'>
@@ -37,47 +39,85 @@ export default function Home() {
             >
               <h2
                 id='upcoming-event-heading'
-                className='text-2xl font-semibold mb-4'
+                className='text-2xl font-semibold mb-4 text-center'
               >
                 Upcoming Event: {nextEvent.title}
               </h2>
-              <dl className='space-y-2'>
-                <div>
-                  <dt className='inline font-bold'>Date: </dt>
-                  <dd className='inline'>{nextEvent.date}</dd>
-                </div>
-                <div>
-                  <dt className='inline font-bold'>Location: </dt>
-                  <dd className='inline'>{nextEvent.location}</dd>
-                </div>
-                {nextEvent.time && (
-                  <div>
-                    <dt className='inline font-bold'>Time: </dt>
-                    <dd className='inline'>{nextEvent.time}</dd>
+
+              {/* Event Layout - Mobile: stacked, Desktop: image left, content right */}
+              <div className='md:grid md:grid-cols-5 md:gap-8 md:items-start'>
+                {/* Event Image */}
+                <figure className='mb-6 md:mb-0 md:col-span-2'>
+                  <div className='relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-md'>
+                    <Image
+                      src={`/images/events/${nextEvent.id}.jpg`}
+                      alt={
+                        nextEvent.altText ||
+                        `${nextEvent.title} - Tactile art exhibition at ${nextEvent.location}`
+                      }
+                      fill
+                      sizes='(max-width: 768px) 100vw, 400px'
+                      className='object-cover hover:scale-105 transition-transform duration-300'
+                      priority={true}
+                    />
                   </div>
-                )}
-              </dl>
-              <p className='mt-4'>{nextEvent.description}</p>
-              <nav className='mt-4' aria-label='Event related pages'>
-                <ul className='flex space-x-4 list-none p-0'>
-                  <li>
-                    <Link
-                      href='/testimonials'
-                      className='inline-block text-blue-500 hover:underline'
-                    >
-                      Read Testimonials
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href='/past-events'
-                      className='inline-block text-blue-500 hover:underline'
-                    >
-                      View Past Events
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
+                  <figcaption className='sr-only'>
+                    {nextEvent.altText ||
+                      `${nextEvent.title} - Tactile art exhibition at ${nextEvent.location}`}
+                  </figcaption>
+                </figure>
+
+                {/* Event Content */}
+                <div className='md:col-span-3'>
+                  <dl className='space-y-2 mb-4'>
+                    <div>
+                      <dt className='inline font-bold'>Date: </dt>
+                      <dd className='inline'>{nextEvent.date}</dd>
+                    </div>
+                    <div>
+                      <dt className='inline font-bold'>Location: </dt>
+                      <dd className='inline'>{nextEvent.location}</dd>
+                    </div>
+                    {nextEvent.time && !nextEvent.schedule && (
+                      <div>
+                        <dt className='inline font-bold'>Time: </dt>
+                        <dd className='inline'>{nextEvent.time}</dd>
+                      </div>
+                    )}
+                  </dl>
+
+                  <p className='mb-4'>{nextEvent.description}</p>
+
+                  {/* Show structured schedule if available */}
+                  {nextEvent.schedule && (
+                    <EventSchedule
+                      schedule={nextEvent.schedule}
+                      className='mb-4'
+                    />
+                  )}
+
+                  <nav className='mt-4' aria-label='Event related pages'>
+                    <ul className='flex space-x-4 list-none p-0'>
+                      <li>
+                        <Link
+                          href='/testimonials'
+                          className='inline-block text-blue-500 hover:underline'
+                        >
+                          Read Testimonials
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href='/past-events'
+                          className='inline-block text-blue-500 hover:underline'
+                        >
+                          View Past Events
+                        </Link>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </section>
           ) : (
             <section
