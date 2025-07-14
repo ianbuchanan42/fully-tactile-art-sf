@@ -17,6 +17,7 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+        suppressHydrationWarning={true}
       >
         <Navigation />
         <main id='main-content' className='flex-grow'>
