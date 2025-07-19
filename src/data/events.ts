@@ -53,7 +53,7 @@ export const events: Event[] = [
     artistCount: 10,
     grantSupport: [],
     altText:
-      'Artists and visitors interacting with tactile art at the "Staying in Touch" exhibition at Jettison Creative. Artists include Tan Reese, Blink Pop Shift and Kit Rosefield',
+      'A collage of map inspired artwork by Miriam Sweeney and Blink Pop Shift',
   },
   {
     id: 'staying-in-touch-2025',
