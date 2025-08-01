@@ -18,7 +18,8 @@ export const events: Event[] = [
         date: 'August 31st, 2025',
         dayOfWeek: 'Sunday',
         time: 'Noon-5pm',
-        notes: '*Jerry is Presenting tactile maps at 3pm',
+        notes:
+          '*Jerry Kuns and Joshua Miele will be presenting mini lectures on maps at 3pm',
         isSpecial: true,
       },
       {
