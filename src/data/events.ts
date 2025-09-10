@@ -48,10 +48,10 @@ export const events: Event[] = [
       },
     ],
     description:
-      'An exploration of Maps and how they can be a combination of functional, fantastical, emotional and practical',
-    isPast: false,
-    attendanceCount: 0,
-    artistCount: 10,
+      'Fully Tactile Art SF presented Exploring Maps, a multi-day exhibition at Jettison Creative in San Francisco that invited the public to engage with maps not only as guides of space but as vessels of memory, imagination, and emotion. Held over two weekends from August 30 to September 7, the free event showcased tactile artworks that explored connection, texture, and possibility—blurring the line between function and fantasy—while offering visitors opportunities to experience space through touch and to attend a special presentation on tactile maps by Jerry Kuns & Joshua Miele.',
+    isPast: true,
+    attendanceCount: 170,
+    artistCount: 7,
     grantSupport: [],
     altText:
       'A collage of map inspired artwork by Miriam Sweeney and Blink Pop Shift',
