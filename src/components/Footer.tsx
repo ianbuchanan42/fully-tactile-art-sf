@@ -6,7 +6,8 @@ import Image from 'next/image';
 export default function Footer() {
   const handleEmailClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    const email = 'fully.tactile.art.exhibition' + '@' + 'gmail.com';
+    const encoded = 'ZnVsbHkudGFjdGlsZS5hcnQuZXhoaWJpdGlvbkBnbWFpbC5jb20=';
+    const email = atob(encoded);
     window.location.href = 'mailto:' + email;
   };
 
