@@ -37,6 +37,15 @@ export default function PastEventsPage() {
       />
 
       <div className='container mx-auto p-4'>
+        <section className='mt-12 pb-10'>
+          <h2 className='text-2xl font-semibold mb-4'>Event Archive</h2>
+          <p>
+            Our events bring together artists, visitors, and the visually
+            impaired community to explore tactile art in a welcoming
+            environment. Through workshops, exhibitions, and presentations, we
+            create spaces where art can be experienced through touch.
+          </p>
+        </section>
         {pastEvents.length > 0 ? (
           <section className='mb-10'>
             {pastEvents.map((event: Event, index: number) => (
@@ -60,24 +69,6 @@ export default function PastEventsPage() {
             Read Testimonials
           </Link>
         </div>
-
-        <section className='mt-12'>
-          <h2 className='text-2xl font-semibold mb-4'>Event Archive</h2>
-          <p>
-            Our events bring together artists, visitors, and the visually
-            impaired community to explore tactile art in a welcoming
-            environment. Through workshops, exhibitions, and presentations, we
-            create spaces where art can be experienced through touch.
-          </p>
-          <p className='mt-4'>
-            If you&apos;d like to propose an event or participate in a future
-            exhibition, please{' '}
-            <Link href='/contact' className='text-blue-500 hover:underline'>
-              contact us
-            </Link>
-            .
-          </p>
-        </section>
       </div>
     </>
   );

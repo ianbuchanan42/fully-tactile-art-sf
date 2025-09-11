@@ -20,7 +20,7 @@ export default function Home() {
       />
 
       <article className='container mx-auto p-4'>
-        <section className='mb-12 max-w-3xl mx-auto py-12'>
+        <section className='mb-12 max-w-3xl py-12'>
           <h2 className='text-2xl font-semibold mb-4'>Welcome art lovers!</h2>
           <p>
             Fully Tactile Art SF is a non-profit organization dedicated to

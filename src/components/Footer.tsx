@@ -1,7 +1,15 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Footer() {
+  const handleEmailClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const email = 'fully.tactile.art.exhibition' + '@' + 'gmail.com';
+    window.location.href = 'mailto:' + email;
+  };
+
   return (
     <footer className='bg-gray-100 py-8 mt-12' role='contentinfo'>
       <div className='container mx-auto px-4'>
@@ -31,6 +39,19 @@ export default function Footer() {
               <h3 id='connect-heading' className='text-md font-medium mb-2'>
                 Connect With Us
               </h3>
+              <p className='mb-3 text-gray-700'>
+                Questions? Contact us at{' '}
+                <a
+                  href='#'
+                  onClick={handleEmailClick}
+                  className='text-blue-500 hover:underline cursor-pointer'
+                >
+                  <span>fully.tactile.art.exhibition</span>
+                  <span className='hidden'>@</span>
+                  <span className='inline'>@</span>
+                  <span>gmail.com</span>
+                </a>
+              </p>
               <nav aria-label='Social media links'>
                 <ul className='flex space-x-4'>
                   <li>
