@@ -28,6 +28,14 @@ export default function Navigation() {
         Skip to main content
       </a>
 
+      {/* Skip to current event */}
+      <a
+        href='#upcoming-event'
+        className='sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-blue-600 focus:border-2 focus:border-blue-600 focus:top-2 focus:left-12 focus:outline-none'
+      >
+        Skip to current event
+      </a>
+
       <header className='bg-white py-4 shadow-sm'>
         <div className='container mx-auto px-4 flex justify-between items-center'>
           <Link href='/' className='text-xl font-bold'>

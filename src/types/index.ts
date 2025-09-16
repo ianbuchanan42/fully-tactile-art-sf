@@ -1,11 +1,20 @@
 // Common types for the application
 
+export interface ScheduleDay {
+  date: string; // e.g., "August 30th, 2025"
+  dayOfWeek: string; // e.g., "Saturday"
+  time: string; // e.g., "noon-5pm"
+  notes?: string; // e.g., "Jerry is demoing tactile maps"
+  isSpecial?: boolean; // e.g., "masked day"
+}
+
 export interface Event {
   id: string;
   title: string;
-  date: string;
+  date: string; // Overall date range for display
   location: string;
-  time?: string;
+  time?: string; // Legacy field for simple events
+  schedule?: ScheduleDay[]; // New structured schedule for multi-day events
   description: string;
   isPast: boolean;
   // Grant-related fields

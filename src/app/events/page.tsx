@@ -1,6 +1,7 @@
 import { Event } from '@/types';
 import { events } from '@/data/events';
 import Link from 'next/link';
+import EventSchedule from '@/components/EventSchedule';
 
 export const metadata = {
   title: 'Upcoming Events | Fully Tactile Art SF',
@@ -26,9 +27,19 @@ export default function EventsPage() {
               <p className='mb-2'>
                 <strong>Location:</strong> {event.location}
               </p>
-              <p className='mb-2'>
-                <strong>Time:</strong> {event.time}
-              </p>
+              {event.time && !event.schedule && (
+                <p className='mb-2'>
+                  <strong>Time:</strong> {event.time}
+                </p>
+              )}
+
+              {/* Show structured schedule if available */}
+              {event.schedule && (
+                <div className='mb-4'>
+                  <EventSchedule schedule={event.schedule} />
+                </div>
+              )}
+
               <p className='mb-4'>{event.description}</p>
               <p className='italic text-sm'>
                 Free admission. Donations welcome.
