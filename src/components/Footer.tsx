@@ -24,7 +24,7 @@ export default function Footer() {
             </h2>
             <div className='mb-4'>
               <Link
-                href='https://www.flipcause.com/secure/cause_pdetails/MTc3NjU0'
+                href='https://www.every.org/fully-tactile-art-sf?suggestedAmounts=20%2C50%2C100%2C500&method=card%2Cbank%2Cpaypal%2Cvenmo%2Cpay%2Cdaf&designation=website+donation&min_value=5&utm_campaign=donate-link#/donate'
                 className='inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition'
                 target='_blank'
                 rel='noopener noreferrer'
